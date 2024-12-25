@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hima Varsha - Portfolio</title>
+    <!-- Link to Google Fonts for a clean and modern font style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling for consistent look and feel */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        /* Header section styling */
+        .header {
+            background-color: #333;
+            color: floralwhite;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0; /* Remove default margin for consistent alignment */
+        }
+        .nav {
+            display: flex;
+            gap: 15px; /* Adds space between navigation links */
+        }
+        .nav a {
+            color: floralwhite;
+            text-decoration: none;
+            font-weight: 600; /* Makes navigation links bold */
+        }
+        .nav a:hover {
+            text-decoration: underline; /* Enhances interactivity with hover effect */
+        }
+        /* Section styling to separate content areas */
+        .section {
+            padding: 50px;
+            text-align: center; /* Centers text in each section */
+            max-width: 1200px; /* Limits width for better readability */
+            margin: 0 auto; /* Centers sections on the page */
+        }
+        .about {
+            background-color: #e6e6fa;
+            padding: 40px;
+            border-radius: 10px; /* Rounded corners for visual appeal */
+        }
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Switch to grid for better layout */
+            gap: 20px; /* Adds space between items */
+            justify-content: center; /* Centers content within the section */
+        }
+        .skill, .project {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center; /* Centers text inside each box */
+        }
+        /* Styling for the contact form */
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto; /* Centers the form on the page */
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px; /* Rounded corners for inputs */
+        }
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+        .contact-form button:hover {
+            background-color: #555; /* Darker background on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation links -->
+    <header class="header">
+        <h1>Hima Varsha</h1>
+        <nav class="nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About section to introduce yourself -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about">
+            <p>Hello! My name is Pamarthi Hima Varsha. I am an enthusiastic, self-motivated, and hardworking individual pursuing a degree in Information Technology. I thrive in challenging environments and enjoy learning new skills to tackle problems effectively.</p>
+        </div>
+    </section>
+
+    <!-- Skills section showcasing technical abilities -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React.js</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">SQL</div>
+        </div>
+    </section>
+
+    <!-- Projects section to highlight key accomplishments -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>An online shopping platform with product filtering and payment integration.</p>
+            </div>
+            <div class="project">
+                <h3>Job Board</h3>
+                <p>A job search platform with authentication and search filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section with a simple form -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form class="contact-form">
+            <!-- Input for user's name -->
+            <input type="text" placeholder="Your Name" required>
+            <!-- Input for user's email -->
+            <input type="email" placeholder="Your Email" required>
+            <!-- Textarea for user's message -->
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <!-- Submit button -->
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
